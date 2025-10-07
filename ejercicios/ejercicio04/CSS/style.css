@@ -9,25 +9,32 @@
     text-align: center; 
     
 }
-
+/* Texto en verde y alineado al centro */ 
 #t2 {
     color: green;
     text-align: center;
 }
 
-/* Grupo de Trabajador con un fondo gris */ 
+/* Seccion del Trabajador en bordes normales */ 
+
 .trabajador {
-    border-style:solid;
+    border: 2px solid black;
 }
 
+/* Seccion del Trabajador en bordes dobles */ 
+
 .trabajador2 {
-    border-style: double;
+    border: 6px double black;
 }
+
+/* Fondo gris y con padding */ 
 
 .borde {
     background-color: gray;
     padding: 1%;
 }
+
+/* Texto subrayado */ 
 
 span {
     text-decoration: underline;
