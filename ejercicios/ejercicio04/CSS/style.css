@@ -1,0 +1,34 @@
+
+/* Texto DATOS TRABAJADORES en rojo */ 
+#dt {
+    color: red;
+}
+
+#t1 {
+    color: blue;
+    text-align: center; 
+    
+}
+
+#t2 {
+    color: green;
+    text-align: center;
+}
+
+/* Grupo de Trabajador con un fondo gris */ 
+.trabajador {
+    border-style:solid;
+}
+
+.trabajador2 {
+    border-style: double;
+}
+
+.borde {
+    background-color: gray;
+    padding: 1%;
+}
+
+span {
+    text-decoration: underline;
+}
