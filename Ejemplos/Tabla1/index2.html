@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo-tabla.css">
+        <title>Ejemplo de la etiqueta table</title>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <th>Titulo Columna1</th> <!--Celda Cabecera columna 1-->
+                <th>Titulo Columna2</th> <!--Celda Cabecera columna 2-->
+                <th>Titulo Columna3</th> <!--Celda Cabecera columna 3-->
+
+            </tr>
+
+            <!--Primera Fila-->
+
+            <tr>
+                <td rowspan="3">Celda F1C1</td> <!--Celda 1 de la fila 1-->
+                <td>Celda F1C2</td> <!--Celda 2 de la fila 1-->
+                <td>Celda F1C3</td> <!--Celda 3 de la fila 1-->
+            </tr>
+
+            <!--Segunda Fila-->
+
+            <tr>
+                <!--<td>Celda F2C1</td> Celda 1 de la fila 2-->
+                <td>Celda F2C2</td> <!--Celda 2 de la fila 2-->
+                <td>Celda F2C3</td> <!--Celda 3 de la fila 2-->
+            </tr>
+
+            <!--Tercera Fila-->
+
+            <tr>
+                <!--<td>Celda F3C1</td> Celda 1 de la fila 3-->
+                <td colspan="2">Celda F3C2</td> <!--Celda 2 de la fila 3-->
+            </tr>
+
+            <table class="segunda-tabla">
+                <tr>
+                    <td colspan="3">2022</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" colspan="2">Fiesta</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+        </table>
+    </body>
+</html>
+
+    

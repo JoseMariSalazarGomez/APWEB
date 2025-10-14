@@ -1,17 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
     background-color: #f4f4f4;
     min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
+header {
+    text-align: center;
+    background-color: rgb(102, 122, 211);
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 40px;
+}
 
 .menu-arriba {
-    background-color: burlywood;
+    background-color: rgb(148, 163, 228);
+    padding: 2px;
 }
-
 
 .menu-arriba ul {
     list-style: none;
     display: flex;
+    padding: 0;
     justify-content: center;
-    text-spacing-trim: 12vh;
+}
+
+.menu-arriba ul li a {
+    margin: 20px;
+    background-color: rgb(102, 122, 211);
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+
+}
+
+footer {
+    background-color: rgb(102, 122, 211);
+    text-align: center;
+    color: white;
+    padding: 120px;
+
+}
+
+article {
+    background-color: rgb(148, 163, 228);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    margin: 40px;
+    padding: 2px;
+}
+
+article p {
+    color: white;
+    text-align: center;
+}
+
+article h3 {
+    color: white;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 10px;
+    text-align: center;
 }
