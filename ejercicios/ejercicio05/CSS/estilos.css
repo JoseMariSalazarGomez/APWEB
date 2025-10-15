@@ -1,0 +1,66 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: rgb(61, 61, 61);
+}
+
+h2 {
+    color: gray;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th {
+    background-color: gray;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.segunda-parte-columna {
+    padding-left: 15px;
+    padding-right: 80px;
+}
+
+.segunda-parte-columna-arriba {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tra-parte {
+    text-align: center;
+    background-color: lightgray;
+    color: #333;
+}
+
+caption {
+    color: gray;
+
+}
+
+h3 {
+    padding-left: 0px;
+    color: gray;
+    font-size: 23px;
+}
