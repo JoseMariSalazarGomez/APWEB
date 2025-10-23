@@ -1,13 +1,25 @@
-
+/* Edicion del body */
 body {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    display: flex;
+
 }
 
+/* Edicion del div con clase receta */
+.receta {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+/* Edicion de la cabezera */
 header {
     background-color: #F5A623;
     color: white;
@@ -17,23 +29,34 @@ header {
     justify-content: center;
 }
 
+/* Edicion de la imagen */
 img {
     display: block;         
     margin: 0 auto 20px;     
     max-width: 100%;         
     border-radius: 10px; 
+    align-content: center;
+    margin-bottom: 20px;
 }
 
+/* Edicion del div que contiene los ingredientes */
 .ingredientes {
     margin-top: 0.5rem;
 }
 
+/* Aplicar las letras necesarias en naranja */
+.ingredientes h2, .caracteristicas h2, .caracteristicas span, .receta h1, .elaboracion h2 {
+    color: #F5A623;
+}
+
+/* Edicion de la tabla de ingredientes */
 table {
     width: 100%;
     border-collapse: collapse;
 
 }
 
+/* Edicion de los th de la tabla de ingredientes */
 th {
     background-color: #F5A623;
     color: white;
@@ -42,21 +65,25 @@ th {
     text-align: center;
 }
 
+/* Edicion de los td de la tabla de ingredientes */
 td {
     padding: 0.65rem 1rem;
     border-bottom: 1px solid #eee;
     text-align: center;
 }
 
+/* Aplicar color del fondo diferente a los contenedores impares */
 tr:nth-child(even) {
     background-color: #fafafa;
 }
 
+/* Edicion del main */
 main {
     padding: 2rem;
     background-color: beige;
 }
 
+/* Edicion del pie de pagina */
 footer {
     background-color: #333;
     color: white;
@@ -64,3 +91,20 @@ footer {
     padding: 15px;
 }
 
+/* Edicion del apartado caracteristicas (toda la lista) */
+.caracteristicas ul {
+    list-style: square;
+    padding-left: 20px;
+    text-align: left;
+}
+.caracteristicas ul li {
+    margin-bottom: 10px;
+}
+.caracteristicas span {
+    font-weight: bold;
+}
+
+/* Edicion del apartado Elaboracion */
+.elaboracion {
+    text-align: left;
+}
