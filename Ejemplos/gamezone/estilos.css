@@ -9,29 +9,74 @@ html, body  {
     height: 100%;
 }
 
-/* Configuración general del body */
+/* El body se convierte en contenedor flex
+    - flex-direction: column -> apila verticalmente el header, main y footer
+    - min-height: 100vh -> ocupa toda la altura de la ventana (vh  =  viewport heigh) */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;   /* Altura total del viewport */
 }
 
 /* Entramos y rellenamos la cabecera */
+/* Cabezera con flex: dos zonas -> logo/titulo (marca) y menú (nav)*/
 .cabecera {
     text-align: center;
     padding: 1rem;
+    display: flex;
+    color: #fff;
+    background: #2C3E50;
+    justify-content: space-between;     /* Posiciona brand izq. y nav derecha */
+    align-items: center;        /* Centra verticalmente */
+}
+
+/* Tamaño de la imagen (logo) */
+.logo {
+    height: 100px;
+    width: auto;
 }
 
 /* Zona principal (main): aplicamos relleno */
 #contenido-principal {
     padding: 1rem;
+    flex-grow: 1;       /* Empuja al footer */
+    display: flex;      /* Convierto al main como contenedor flexible */
+    flex-direction: row;
+    gap: 1rem;
 }
 
 /* Titulo de la cabecera sin margenes extra y color destacado */
-.titulo {
+/* .titulo {
     margin: 0;
     color: #2C3E50;
+} */
+
+/* Menú de navegación con flex */
+.menu {
+    list-style-type: none;
+    display: flex;          /* Para colocar los enlaces en linea */
+    flex-direction: row;           /* Por defecto es row, por tanto podemos prescindir de esta línea */
+    gap: 1.5rem;        /* Espacio entre enlaces */
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;      /* Elimina el subrayado */
+    font-weight: bold;      /* Aplica negrita a los enlaces */
+}
+
+/* Efecto hover en enlaces  */
+.menu a:hover {
+    color: #2C3E50;
+    background-color: white;
+    padding: 7px;
 }
 
 /* Clase "tarjeta": usado para agrupar secciones visualmente */
@@ -42,7 +87,6 @@ body {
     border-radius: 20px;
     padding: 1.5rem;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
-    border: 3px solid #c2a9a9;
 }
 
 /* Listas en dos columnas: usamos flexbox para alinear dos elementos en horizontal */
@@ -73,6 +117,26 @@ body {
     border-collapse: collapse;
     margin-top: 1rem;
 }
+
+/* Bordes y relleno de la tabla */
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Cabezera de la tabla con estilo diferenciado */
+.tabla th {
+    background: #2C3E50;
+    color: #fff;
+    text-align: center;
+}
+
+/* Contenido de talba alineado a la izquierda */
+.tabla td {
+    text-align: left;
+    white-space: nowrap; /* Evita saltos de linea en celdas */
+}
+
 
 /* Estilo pie de página */
 .pie {
