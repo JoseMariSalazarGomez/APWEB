@@ -19,9 +19,10 @@
         <nav class="navegacion">
             <ul class="menu">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
+                <li><a href="pages/noticias.html">Noticias</a></li>
                 <li><a href="#">Guías</a></li>
                 <li><a href="#">Contacto</a></li>
+                <li><a href="pages/resgistros.html">Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -86,6 +87,127 @@
             </table>
         </section>
     </main>
+
+    <!-- Formulario de búsqueda -->
+    <section class="tarjeta">
+        <form name="busqueda" action="buscar.html" method="get">
+            <!-- Label conecta visualmente y funcionalmente con el campo (for <-> id)
+            sirve oara asociar un texto descriptivo a un elemento del formulario.
+            En este ejemplo lo conectamos con el input busqueda -->
+            <label for="busqueda">Buscar juego:</label>
+            <input type="search" id="busqueda" name="busuqeda" placeholder="Escribe el nombre del juego...">
+            <button type="submit">Buscar</button>
+
+    </section>
+
+            <!-- Formulario de registro con varios tipos de capos -->
+    <section class="tarjeta">
+        <h2>registro de usuario</h2>
+        <form action="register" action="pages/resgistros.html" method="post" class="form-registro">
+            <fieldset>
+                <legend>Datos de registro</legend>
+                <!-- Camp de texto -->
+                <div class="form-fila"> 
+                    <label for="nombre">Nombre de usuario: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" required>     <!-- required convierte a campo en obligatorio -->
+                </div>
+
+                <!-- Contraseña -->
+                <div class="form-fila"> 
+                    <label for="clave">Contraseña:</label>
+                    <input type="password" id="clave" name="clave" minlength="6" maxlength="12" required>
+                </div>
+
+                <!-- Campo email -->
+                <div class="form-fila"> 
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <!-- Campo DNI/NIE -->
+                <div class="form-fila"> 
+                    <label for="dni">DNI o NIE</label>
+                    <input type="text" id="dni" name="identidad" placeholder="12345678A/X1234567L" pattern="(([0-9])({8}))[A-Za-z]{1}" required>
+                </div>
+
+                <div class="form-fila botones">
+                    <button type="submit">Registrate</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="tarjeta">
+        <form action="registro.html" method="get">
+            <!-- Para agrupar varios campos del form -->
+            <fieldset>
+                <legend>Lista desplegable</legend> <!-- Añadir leyenda al fieldset -->
+                <label for="categoria">Categoría:</label>
+                <select name="categoria" id="categoria">
+                    <option selected disabled>Selecciona una opción</option>
+                    <option value="fantasia">Fántasia</option>
+                    <option value="Rol">Rol</option>
+                    <option value="aventuras">Aventuras</option>
+                    <option value="rpg">RPG</option>
+                </select>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Input tipo radio</legend>
+                <p>Selecciona la plataforma:</p>
+
+                <input type="radio" name="plataforma" id="PC" value="pc">
+                <label for="pc">PC</label>
+                <br>
+
+                <input type="radio" name="plataforma" id="nintendo" value="nintendo">
+                <label for="Nintendo">Nintendo</label>
+                <br>
+
+                <input type="radio" name="plataforma" id="ps5" value="ps5">
+                <label for="PS5">PS5</label>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Input tipo checkbox</legend>
+                <p>Selecciona la plataforma:</p>
+
+                <input type="checkbox" name="plataforma" id="PC" value="pc">
+                <label for="pc">PC</label>
+                <br>
+
+                <input type="checkbox" name="plataforma" id="nintendo" value="nintendo">
+                <label for="Nintendo">Nintendo</label>
+                <br>
+
+                <input type="checkbox" name="plataforma" id="ps5" value="ps5">
+                <label for="PS5">PS5</label>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Campo tipo fecha</legend>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+
+                <label for="fecha-hora">Fecha y hora:</label>
+                <input type="datetime-local" name="fecha-hora" id="fecha-hora">
+            </fieldset>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensjae" id="mensaje" cols="30" rows="5" placeholder="Deja aqui un mensaje"></textarea>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar Formulario">
+        </form>
+    </section>
+    
+        </form>
+    </section>
+
 
     <!-- Pie de la pagina -->
 
