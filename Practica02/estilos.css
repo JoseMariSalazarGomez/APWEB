@@ -14,7 +14,7 @@
 .cabezera img {
     width: 300px;
     height: 110px;
-
+    object-fit: cover; 
 }
 
 /* Cuerpo de la pagina y contenido estilado */
