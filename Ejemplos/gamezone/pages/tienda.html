@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descritprion" content="Página web sobre videojuegos">
+    <meta name="author" content="Guillermo Cortés Van de Velde">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>GameZone - Tu portal de videojuego</title>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="marca">
+            <img src="../imagenes/gamezone-logo.png" alt="Logotipo GameZone" class="logo">
+            <!-- <h1 class="titulo">GameZone</h1> -->
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guías</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido-principal">
+        <section class="tarjeta tienda">
+            <!-- Contenedor de cards de producto -->
+            <div class="lista-cards lista-cards--flex">
+
+                <!-- Primer producto -->
+                <article class="card">
+
+                    <!-- Imagen -->
+                    <img src="../imagenes/mouse.png" alt="Ratón Gaming RGB" class="card-imagen">
+
+                    <!-- Título del producto -->
+                    <h3 class="card-titulo">Ratón Gaming RGB</h3>
+
+                    <!-- Breve descriptición del producto -->
+                    <p class="card-descripcion">Ratón ergonómico con 6 botonos y sensor de alta precisión</p>
+
+                    <!-- Precio del producto -->
+                    <p class="card-precio">19,99€</p>
+
+                    <!-- Botón (solo decorativos, sin funcionalidad JavaScript) -->
+                    <a href="#" class="card-boton">Añadir al carrito</a>
+                </article>
+
+                <!-- Segundo producto -->
+                <article class="card">
+                    <img src="../imagenes/headphones.png" alt="Cascos Gaming" class="card-imagen">
+                    <h3 class="card-titulo">Cascos Gaming</h3>
+                    <p class="card-descripcion">Cascos ergonómico con micrófono, conexión usb y buena calidad de sonido</p>
+                    <p class="card-precio">59,99€</p>
+                    <a href="#" class="card-boton">Añadir al carrito</a>
+                </article>
+
+                <!-- Tercer producto -->
+                <article class="card">
+                    <img src="../imagenes/keyboard.png" alt="Teclado Gaming" class="card-imagen">
+                    <h3 class="card-titulo">Teclado Gaming RGB</h3>
+                    <p class="card-descripcion">Teclado de membrana totalmente reprogramable</p>
+                    <p class="card-precio">14,99€</p>
+                    <a href="#" class="card-boton">Añadir al carrito</a>
+                </article>
+
+                <!-- Cuarto producto -->
+                <article class="card">
+                    <img src="../imagenes/monitor.png" alt="Monitor Gaming" class="card-imagen">
+                    <h3 class="card-titulo">Monitor Gaming</h3>
+                    <p class="card-descripcion">Pantalla de 29", 120 Hz, Oled, semicurvo</p>
+                    <p class="card-precio">499,99€</p>
+                    <a href="#" class="card-boton">Añadir al carrito</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCION DE PRÁCTICA GRID -->
+        <section class="tarjeta practica-gred">
+        <h2>Ejemplo de cuadrícula Grid</h2>
+
+            <!-- Contenedor grid -->
+            <div class="grid-container">
+                <div class="item-grid">1</div>
+                <div class="item-grid">2</div>
+                <div class="item-grid">3</div>
+                <div class="item-grid">4</div>
+                <div class="item-grid">5</div>
+                <div class="item-grid">6</div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie">
+        <p>&copy; 2025 Todos los derechos reservados.</p>
+    </footer class="pie">
+</body>
+</html>

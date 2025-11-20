@@ -3,47 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina web sobre videojuegos"> 
+    <meta name="descritprion" content="Página web sobre videojuegos">
+    <meta name="author" content="Guillermo Cortés Van de Velde">
     <link rel="stylesheet" href="estilos.css">
-    <title>GameZone - Tu portal de videojuegos</title>
+    <title>GameZone - Tu portal de videojuego</title>
 </head>
 <body>
-    <!-- Cabezera de la pagina -->
     <header class="cabecera">
         <div class="marca">
-            <img src="imagenes/gamezone-logo.png" alt="imagen gamezone" class="logo">
+            <img src="imagenes/gamezone-logo.png" alt="Logotipo GameZone" class="logo">
             <!-- <h1 class="titulo">GameZone</h1> -->
         </div>
 
         <!-- Menú de navegación -->
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="pages/noticias.html">Noticias</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
                 <li><a href="#">Guías</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="pages/resgistros.html">Registro</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/registro.html">Registro</a></li>
+                <li><a href="pages/tienda.html">Tienda</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main de la pagina -->
-
     <main id="contenido-principal">
         <section class="intro tarjeta">
-            <h2>Bienvenido a GameZone</h2>
+            <h2>Bienvenid@ a GameZone</h2>
             <p>Portal de ejemplo para practicar HTML y CSS</p>
             <p class="aviso">En este bloque aplicamos el box model sobre esta tarjeta</p>
         </section>
 
-        <section class="listas-y-tablas tarjeta">
+        <section class="listas-y-tabla tarjeta">
             <h2>Guía rápida</h2>
             <div class="listas">
                 <div>
                     <h3>Características</h3>
                     <ul class="lista">
-                        <li>Analisis semanales</li>
-                        <li>Guias paso a paso</li>
+                        <li>Análisis semanales</li>
+                        <li>Guías paso a paso</li>
                         <li>Comunidad activa</li>
                     </ul>
                 </div>
@@ -58,7 +57,7 @@
                 </div>
             </div>
 
-            <h3>Top Ventas</h3>
+            <h3>Top ventas</h3>
             <table class="tabla">
                 <thead>
                     <tr>
@@ -71,149 +70,132 @@
                     <tr>
                         <td>Racing Challenge</td>
                         <td>PC</td>
-                        <td>120$</td>
+                        <td>120€</td>
                     </tr>
                     <tr>
-                        <td>Victoria III</td>
+                        <td>Magic Realms</td>
                         <td>PS</td>
-                        <td>95.99$</td>
+                        <td>95.50€</td>
                     </tr>
                     <tr>
-                        <td>Heart of Iron IV</td>
-                        <td>NS</td>
-                        <td>81.99$</td>
+                        <td>City Builder</td>
+                        <td>Nintendo Switch</td>
+                        <td>81.20€</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-    </main>
 
-    <!-- Formulario de búsqueda -->
-    <section class="tarjeta">
-        <form name="busqueda" action="buscar.html" method="get">
-            <!-- Label conecta visualmente y funcionalmente con el campo (for <-> id)
-            sirve oara asociar un texto descriptivo a un elemento del formulario.
-            En este ejemplo lo conectamos con el input busqueda -->
-            <label for="busqueda">Buscar juego:</label>
-            <input type="search" id="busqueda" name="busuqeda" placeholder="Escribe el nombre del juego...">
-            <button type="submit">Buscar</button>
+        <!-- Formulario de búsqueda -->
+        <section class="tarjeta">
+            <form name="buscar-juego" action="buscar.html" method="get">
+                <!-- label conectavisualmente y funcionalmente con el campo (for <-> id)
+                Sirve para asociar un texto descriptivo a un elemento del formulario.
+                En este ejemplo lo conectamos con el input busqueda -->
+                <label for="busqueda">Buscar juego:</label>
+                <input type="search" id="busqueda" name="busqueda" placeholder="Escribe el nombre del juego...">        <!-- El placeholder ofrece una pista visual -->
+                <button type="submit">Buscar</button>
+                
+            </form>
+        </section>
 
-    </section>
+        <!-- Formulario de registro con varios tipos de campos -->
+        <section class="tarjeta">
+            <h2>Registro de usuario</h2>
+            <form name="register" action="registro.html" method="post">
 
-            <!-- Formulario de registro con varios tipos de capos -->
-    <section class="tarjeta">
-        <h2>registro de usuario</h2>
-        <form action="register" action="pages/resgistros.html" method="post" class="form-registro">
-            <fieldset>
-                <legend>Datos de registro</legend>
-                <!-- Camp de texto -->
-                <div class="form-fila"> 
-                    <label for="nombre">Nombre de usuario: </label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" required>     <!-- required convierte a campo en obligatorio -->
-                </div>
+                <!-- Campo de texto -->
+                <label for="nombre">Nombre de usuario:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required>     <!-- required convierte el campo en obligatorio -->
 
                 <!-- Contraseña -->
-                <div class="form-fila"> 
-                    <label for="clave">Contraseña:</label>
-                    <input type="password" id="clave" name="clave" minlength="6" maxlength="12" required>
-                </div>
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave" minlength="6" maxlength="12" required>       <!-- minlength y maxlength ayuda a validar los datos antes de enviar -->
 
-                <!-- Campo email -->
-                <div class="form-fila"> 
-                    <label for="correo">Email:</label>
-                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
-                </div>
+                <!-- Campo de Email -->
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
 
                 <!-- Campo DNI/NIE -->
-                <div class="form-fila"> 
-                    <label for="dni">DNI o NIE</label>
-                    <input type="text" id="dni" name="identidad" placeholder="12345678A/X1234567L" pattern="(([0-9])({8}))[A-Za-z]{1}" required>
-                </div>
+                <label for="dni">DNI o NIE:</label>
+                <input type="text" name="dni" id="identidad" placeholder="12345678A/X1234567M" pattern="((([0-9]{8})|([X-Zx-z]{1}[0-9]{7}))([A-Za-z]{1}))" required>
 
-                <div class="form-fila botones">
-                    <button type="submit">Registrate</button>
-                </div>
-            </fieldset>
-        </form>
-    </section>
+                <!-- Botón de envío -->
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
 
-    <section class="tarjeta">
-        <form action="registro.html" method="get">
-            <!-- Para agrupar varios campos del form -->
-            <fieldset>
-                <legend>Lista desplegable</legend> <!-- Añadir leyenda al fieldset -->
-                <label for="categoria">Categoría:</label>
-                <select name="categoria" id="categoria">
-                    <option selected disabled>Selecciona una opción</option>
-                    <option value="fantasia">Fántasia</option>
-                    <option value="Rol">Rol</option>
-                    <option value="aventuras">Aventuras</option>
-                    <option value="rpg">RPG</option>
-                </select>
-            </fieldset>
+        <section class="tarjeta">
+            <form action="contacto.php" method="get">
+                <fieldset>
+                    <legend>Lista desplegable</legend>      <!-- Añadir leyenda al fieldset -->
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria" id="categoria">        <!-- Lista desplegable -->
+                        <option selected disabled>-Selecciona una opción-</option>
+                        <option value="fantasia">Fantasía</option>
+                        <option value="rol">Rol</option>
+                        <option value="aventuras">Aventuras</option>
+                        <option value="lucha">Lucha</option>
+                    </select>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Input tipo radio</legend>
+                    <p>Selecciona la plataforma:</p>
 
-            <fieldset>
-                <legend>Input tipo radio</legend>
-                <p>Selecciona la plataforma:</p>
+                    <input type="radio" name="plataforma" id="pc" value="pc">
+                    <label for="pc">PC</label>
+                    <br>
 
-                <input type="radio" name="plataforma" id="PC" value="pc">
-                <label for="pc">PC</label>
-                <br>
+                    <input type="radio" name="plataforma" id="ps5" value="ps5">
+                    <label for="ps5">PS5</label>
+                    <br>
 
-                <input type="radio" name="plataforma" id="nintendo" value="nintendo">
-                <label for="Nintendo">Nintendo</label>
-                <br>
+                    <input type="radio" name="plataforma" id="nintendo" value="nintendo">
+                    <label for="nintendo">Nintendo</label>
+                </fieldset>
 
-                <input type="radio" name="plataforma" id="ps5" value="ps5">
-                <label for="PS5">PS5</label>
-                <br>
-            </fieldset>
+                <fieldset>
+                    <legend>Input tipo checkbox</legend>
+                    <p>Selecciona la plataforma:</p>
 
-            <fieldset>
-                <legend>Input tipo checkbox</legend>
-                <p>Selecciona la plataforma:</p>
+                    <input type="checkbox" name="videoconsola" id="pc" value="pc">
+                    <label for="pc">PC</label>
+                    <br>
 
-                <input type="checkbox" name="plataforma" id="PC" value="pc">
-                <label for="pc">PC</label>
-                <br>
+                    <input type="checkbox" name="videoconsola" id="ps5" value="ps5" checked>
+                    <label for="ps5">PS5</label>
+                    <br>
 
-                <input type="checkbox" name="plataforma" id="nintendo" value="nintendo">
-                <label for="Nintendo">Nintendo</label>
-                <br>
+                    <input type="checkbox" name="videoconsola" id="nintendo" value="nintendo">
+                    <label for="nintendo">Nintendo</label>
+                </fieldset>
 
-                <input type="checkbox" name="plataforma" id="ps5" value="ps5">
-                <label for="PS5">PS5</label>
-                <br>
-            </fieldset>
+                <fieldset>
+                    <legend>Campo tipo fecha</legend>
 
-            <fieldset>
-                <legend>Campo tipo fecha</legend>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="" id="fecha">
 
-                <label for="fecha">Fecha:</label>
-                <input type="date" name="fecha" id="fecha">
+                    <label for="fecha-hora">Fecha y hora:</label>
+                    <input type="datetime-local" name="fecha-hora" id="fecha-hora">
+                </fieldset>
 
-                <label for="fecha-hora">Fecha y hora:</label>
-                <input type="datetime-local" name="fecha-hora" id="fecha-hora">
-            </fieldset>
+                <fieldset>
+                    <label for="mensaje">Mensaje:</label>
+                    <br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Deja aquí tu mensaje..."></textarea>
+                </fieldset>
+                
+                <input type="submit" value="Buscar">
+                <input type="reset">
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensjae" id="mensaje" cols="30" rows="5" placeholder="Deja aqui un mensaje"></textarea>
+        </section>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar Formulario">
-        </form>
-    </section>
-    
-        </form>
-    </section>
-
-
-    <!-- Pie de la pagina -->
+    </main>
 
     <footer class="pie">
-        <p>&copy; 2025 todos los derechos reservados.</p>
+        <p>&copy; 2025 Todos los derechos reservados.</p>
     </footer>
-    
 </body>
 </html>
