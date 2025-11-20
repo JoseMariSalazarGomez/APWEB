@@ -1,0 +1,106 @@
+/* Estilo de la pagina web */
+
+/* Estilo de la cabezera de la pagina web*/
+
+header {
+    background-color: #4CAF50;
+    color: white;  
+    text-align: center;  
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    padding-right: 15px;
+}
+
+.cabezera-imagen {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    flex-direction: row; 
+}
+
+/* Estilo del contenido principal de la pagina web*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.contenedor-principal {
+    padding: 0 2rem 2rem 2rem;
+}
+
+main {
+    flex: 1;
+}
+
+.contenedor-principal h1 {
+    color: black;
+    text-align: center;
+}
+
+.contenedor-tarjetas-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 20px;
+    padding: 10px;
+}
+
+.tarjeta {
+    border: 2px solid #CCC;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    justify-content: center;
+    text-align: center;
+    background-color: #F9F9F9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+
+}
+
+.tarjeta img {
+    max-width: 75%;
+    border-radius: 10px;
+}
+
+.tarjeta h2 {
+    color: #333;
+}
+
+.tarjeta h2 {
+    color: #333;
+}
+
+.descripcion-producto {
+    color: #777;
+}
+
+.precio {
+    font-size: 1.25rem;
+    color:  #E74C3C;
+}
+
+
+/* Estilo del pie de pagina de la pagina web */
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
